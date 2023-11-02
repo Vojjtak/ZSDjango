@@ -61,7 +61,6 @@ body {
   color: #666666;
   text-align: left;
   background-color: #fff;
-  width: 1200px;
   margin: auto;
 }
 
@@ -7576,7 +7575,6 @@ button.bg-dark:focus {
 .my-2 {
     margin-bottom: 0.5rem !important;
     display: inline-block;
-    text-align: center;
 }
 
 .ml-2,
