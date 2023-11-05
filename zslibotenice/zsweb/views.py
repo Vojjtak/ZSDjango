@@ -63,5 +63,6 @@ def zapis_ms(request):
 def jidelna(request):
     return render(request, "jidelna/jidelna.html")
 
+
 def kontakt(request):
-    return render(request, "kontakt/kontakt.html")
+    return render(request, "kontakt/contact.html")
