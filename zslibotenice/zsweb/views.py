@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Aktualita
+from .models import Aktualita, Teachers
 
 
 def index(request):
@@ -29,7 +29,9 @@ def poradny(request):
 
 
 def zamestnanci(request):
-    return render(request, "nase_skola/zamestnanci.html")
+    teachers = Teachers.objects.all()
+    return render(request, "nase_skola/zamestnanci.html",
+                  {'teachers':teachers})
 
 
 def dokumenty(request):
