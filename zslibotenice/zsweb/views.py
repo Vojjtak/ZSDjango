@@ -9,7 +9,7 @@ def index(request):
 def aktuality(request):
     aktuality_list = Aktualita.objects.all()
     return render(request, "nase_skola/aktuality.html",
-                  {'aktuality_list': aktuality_list})
+                  {'aktuality_list': reversed(aktuality_list)})
 
 
 def organizaceskoly(request):
