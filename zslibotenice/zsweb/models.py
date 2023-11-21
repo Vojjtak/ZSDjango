@@ -4,7 +4,7 @@ from django.db import models
 class Aktualita(models.Model):
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=True, blank=True)
 
 class Teachers(models.Model):
     name = models.CharField(max_length=200)

@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% load static %}
     <!-- Header Start -->
     <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
         <div class="row align-items-center px-3">
@@ -25,7 +26,7 @@
 
             </div>
             <div class="col-lg-6 text-center text-lg-right" style="margin-top: 3rem !important">
-                <img class="img-school mt-5" src="img/DJI_0214.jpg" alt="">
+                <img class="img-school mt-5" src="{% static 'img/DJI_0214.jpg' %}" alt="">
             </div>
         </div>
     </div>
@@ -35,7 +36,7 @@
         <div class="container pb-3">
             <div class="row">
                 <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding-top: 30px;">
                         <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
                             <h4>Organizace školy</h4>
@@ -50,7 +51,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding-top: 30px;">
                         <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
                             <h4>Zápis dětí do 1. ročníku ZŠ 2020/2021</h4>
@@ -60,7 +61,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding-top: 30px;">
                         <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
                             <h4>Rozhodnutí o přijetí k základnímu vzdělávání.</h4>
@@ -165,6 +166,6 @@
             </div>
         </div>
     </div>
-    <!-- Class End -->
 
 {% endblock %}
+

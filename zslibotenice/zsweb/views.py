@@ -11,6 +11,8 @@ def aktuality(request):
     return render(request, "nase_skola/aktuality.html",
                   {'aktuality_list': reversed(aktuality_list)})
 
+def galerie(request):
+    return render(request, "galerie.html")
 
 def organizaceskoly(request):
     return render(request, "nase_skola/organizace_skol.html")

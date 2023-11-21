@@ -18,5 +18,6 @@ urlpatterns = [
     path('zapis_ms/', views.zapis_ms, name='zapis_ms'),
     path('jidelna/', views.jidelna, name='jidelna'),
     path('kontakt/', views.kontakt, name='kontakt'),
+    path('galerie/', views.galerie, name='galerie')
 
 ]

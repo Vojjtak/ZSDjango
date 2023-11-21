@@ -16,23 +16,19 @@
     </div>
     <!-- Header End -->
 
-
    <!-- Main Start -->
-
-
             <div class="container text-center pb-2">
                 <p class="section-title px-5"><span class="px-2">Aktuality</span></p>
             </div>
-
             {% for item in aktuality_list %}
-                    <div class="aktualita" style="display: inline-block; width: 100%; text-align:center; float: left;">
-                        <img class="card-img-top mb-2" src="{% static 'img/vysledky.png' %}" style="width: 150px;" alt="">
+            <div class="aktualita" style="display: inline-block; width: 100%; text-align: center;">
+                <img class="card-img-top mb-2 img_akt" src="{% static 'img/vysledky.png' %}" style="width: 10%; position: relative; left: -25%; top: 7rem;" alt="">
+                <h4 class="item_akt" style="font-size: 2rem;">{{ item.title }}</h4>
+                <h4 style="font-size: 1rem;">{{ item.date }}</h4>
+                <p class="akt_p">{{ item.description }}</p>
+            </div>
+                <div class="lineupper"></div>
+            {% endfor %}
 
-                            <h4 class="">{{ item.title }}</h4> <h4 class="">{{ item.date }}</h4>
-                                <p style="height: 120px; padding: 0 120px;">{{ item.description }}</p>
-                        </div>
-
-
-        {% endfor %}
 <div style="clear:both;"></div>
 {% endblock %}

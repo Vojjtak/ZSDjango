@@ -452,11 +452,10 @@ mark,
 }
 
 .img-fluid {
-  max-width: 50%;
+  width: 100%;
   height: auto;
   margin-bottom: 50px;
   margin-top: 20px;
-  border-radius: 20px;
 
 }
 
@@ -7508,7 +7507,7 @@ button.bg-dark:focus {
 
 .m-0 {
   margin: 0 !important;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .mt-0,
@@ -9811,3 +9810,61 @@ a.text-dark:hover, a.text-dark:focus {
 
 input {  border-radius: 40px;
 }
+
+.lineupper {
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid #17a2b8;
+    border-radius: 20px;
+}
+
+.aktualita {
+    margin-bottom: 6%;
+}
+
+.akt_p {
+    height: 3rem;
+    margin-bottom: 2rem;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+@media (max-width: 991.98px) {
+    .lineupper {
+        margin-top: 3%;
+
+    }
+}
+
+@media (max-width: 991.98px) {
+    .img_akt {
+        visibility: hidden;
+
+    }
+}
+@media (max-width: 991.98px) {
+    .akt_p .item_akt {
+        width: 90%;
+
+    }
+}
+
+.carousel {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the carousel */
+}
+
+.slick-prev, .slick-next {
+    font-size: 24px; /* Customize the size of the navigation arrows */
+}
+
+.slidergalerie {
+    width: 80%;
+    margin: auto;
+}
+
+.d-block {
+    max-height: 700px;
+}
+
